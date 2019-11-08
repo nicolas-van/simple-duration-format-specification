@@ -125,3 +125,8 @@ ws = the space character
 ### Convertions to seconds
 
 Each `element` encountered is multiplied by its corresponding unit and added to a global number of seconds. After this operation the `-` operator should be applied if present.
+
+### Normalization
+
+It should be noted that this format allows expressions like `345h` (specifying more hours that a day can contain), `0.1m` (a fraction of a minute that could be expressed as 6 seconds) or `24m 2h 3m` (specifying the same unit multiple times and with inconsistent ordering). This is a desirable particularity for easy human writing and ease of software implementation.
+
