@@ -39,10 +39,10 @@ This corresponds to `12.342024` seconds.
 ### Definitions
 
 * **second**: A second according to the [SI](https://en.wikipedia.org/wiki/International_System_of_Units). **Representation symbol**: `s`.
-* **millisecond**: 10e-3 seconds. **Representation symbol**: `ms`.
-* **microsecond**: 10e-6 seconds. **Representation symbol**: `µs`.
-* **nanosecond**: 10e-9 seconds. **Representation symbol**: `ns`.
-* **minute**: 60 seconds. **Representation symbol**: `m`.
-* **hour**: 60 minutes. **Representation symbol**: `h`.
-* **day**: 24 hours. **Representation symbol**: `d`.
-* **year**: A [Julian year](https://en.wikipedia.org/wiki/Julian_year_(astronomy)), which means 365.25 days. **Representation symbol**: `y`.
+* **millisecond**: 10e-3 seconds. *Representation symbol*: `ms`.
+* **microsecond**: 10e-6 seconds. *Representation symbol*: `µs`.
+* **nanosecond**: 10e-9 seconds. *Representation symbol*: `ns`.
+* **minute**: 60 seconds. *Representation symbol*: `m`.
+* **hour**: 60 minutes. *Representation symbol*: `h`.
+* **day**: 24 hours. *Representation symbol*: `d`.
+* **year**: A [Julian year](https://en.wikipedia.org/wiki/Julian_year_(astronomy)), which means 365.25 days. *Representation symbol*: `y`.
