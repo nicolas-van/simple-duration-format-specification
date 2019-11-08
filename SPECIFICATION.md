@@ -119,7 +119,7 @@ positive_number = (?:0|[1-9]\d*)(?:\.\d+)?
 ```
 
 ```
-ws = the space character
+ws = the space character or the tab (\t character)
 ```
 
 ### Convertions to seconds
