@@ -115,7 +115,7 @@ nanoseconds = (${positive_number})\s*ns
 ```
 
 ```
-positive_number = (?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?
+positive_number = (?:[1-9]\d*)(?:\.\d+)?
 ```
 
 
