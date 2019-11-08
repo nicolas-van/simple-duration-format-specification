@@ -128,6 +128,20 @@ Each `element` encountered is multiplied by its corresponding unit and added to 
 
 ### Normalization
 
-It should be noted that this format allows expressions like `345h` (specifying more hours that a day can contain), `0.1m` (a fraction of a unit that could be expressed with smaller units), `24m 3m` (specifying the same unit multiple times) or `3h 2y 3ms 4d` (using illogical ordering). This is a desirable particularity for easy human writing and ease of software implementation.
+It should be noted that this format allows expressions like `345h` (specifying more hours that a day can contain), `0.1m` (a fraction of a unit that could be expressed with smaller units), `24m 3m` (specifying the same unit multiple times), `3h 2y 3ms 4d` (using illogical ordering) or `0y 1s` (specifying a useless unit). This is a desirable particularity for easy human writing and ease of software implementation.
 
-When formatting an amount of time to the Simple Duration Format, a software **must** use a normalization process to write the output.
+When formatting an amount of time to the Simple Duration Format, a software **must** use a normalization process to write the output. The normalization process is as follow:
+
+First write the `-` sign if necessary and consider the absolute value of the amount to convert for the rest of the writing process. Take the most significant unit (the year) and detect if that amount is greater that 0. If that's the case write it to the output. Remove the corresponding amount of seconds and repeat for all following units from the most significant to the least significant (the nanosecond). If at the end no element was written at all write `0s`.
+
+Example of normalization:
+
+* `345h` -> `14d9h`
+* `0.1m` -> `6s`
+* `24m 3m` -> `27m`
+* `3h 2y 3ms 4d` -> `2y 4d 3h 4ms`
+* `0y 1s` -> `1s`
+
+### Rounding
+
+Due to hard-to-predict behaviors in float representations, all software implementations **must** provide a rounding mechanism allowing to round the ouput to a given unit while formatting. The default value for that rounding **should** be the millisecond as it is the most common use case.
