@@ -128,5 +128,6 @@ Each `element` encountered is multiplied by its corresponding unit and added to 
 
 ### Normalization
 
-It should be noted that this format allows expressions like `345h` (specifying more hours that a day can contain), `0.1m` (a fraction of a minute that could be expressed as 6 seconds) or `24m 2h 3m` (specifying the same unit multiple times and with inconsistent ordering). This is a desirable particularity for easy human writing and ease of software implementation.
+It should be noted that this format allows expressions like `345h` (specifying more hours that a day can contain), `0.1m` (a fraction of a unit that could be expressed with smaller units), `24m 3m` (specifying the same unit multiple times) or `3h 2y 3ms 4d` (using illogical ordering). This is a desirable particularity for easy human writing and ease of software implementation.
 
+When formatting an amount of time to the Simple Duration Format, a software should use a normalization process 
