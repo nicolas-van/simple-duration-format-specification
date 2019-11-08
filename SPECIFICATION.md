@@ -75,11 +75,43 @@ This corresponds to `12.342024` seconds.
 This document will use the regular-expression common format used by many programming language. In case of misunderstanding use the JavaScript regular expression documentation as reference. The `${...}` operator is used when referring to another regular expression defined in the document.
 
 ```
-root = \s*(${years}?)\s*(${days}?)\s*(${hours}?)\s*(${minutes}?)\s*(${seconds}?)\s*(${milliseconds}?)\s*(${microseconds}?)\s*(${nanoseconds}?)
+simple_duration = \s*(-)?\s*(${years})?\s*(${days})?\s*(${hours})?\s*(${minutes})?\s*(${seconds})?\s*(${milliseconds})?\s*(${microseconds})?\s*(${nanoseconds})?
 ```
 
 ```
-number = (?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?
+years = ${pnumber}\s*y
+```
+
+```
+days = ${pnumber}\s*d
+```
+
+```
+hours = ${pnumber}\s*h
+```
+
+```
+minutes = ${pnumber}\s*m
+```
+
+```
+seconds = ${pnumber}\s*s
+```
+
+```
+milliseconds = ${pnumber}\s*ms
+```
+
+```
+microseconds = ${pnumber}\s*µs
+```
+
+```
+nanoseconds = ${pnumber}\s*ns
+```
+
+```
+pnumber = (?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?
 ```
 
 This format is equivalent for numbers t
