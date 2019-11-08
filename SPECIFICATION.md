@@ -144,4 +144,6 @@ Example of normalization:
 
 ### Rounding
 
-Due to hard-to-predict behaviors in float representations, all software implementations **must** provide a rounding mechanism allowing to round the ouput to a given unit while formatting. The default value for that rounding **should** be the millisecond as it is the most common use case due to time representation is most programming languages.
+Due to hard-to-predict behaviors in float representations, all software implementations **must** provide a rounding mechanism allowing to round the ouput to a given unit while formatting.
+
+The default value for that rounding **should** be the millisecond as it is the most common use case due to time representation is most programming languages.
