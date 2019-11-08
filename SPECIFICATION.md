@@ -83,39 +83,39 @@ element = ${years}|${days}|${hours}|${minutes}|${seconds}|${milliseconds}|${micr
 ```
 
 ```
-years = ${pnumber}\s*y
+years = (${positive_number})\s*y
 ```
 
 ```
-days = ${pnumber}\s*d
+days = (${positive_number})\s*d
 ```
 
 ```
-hours = ${pnumber}\s*h
+hours = (${positive_number})\s*h
 ```
 
 ```
-minutes = ${pnumber}\s*m
+minutes = (${positive_number})\s*m
 ```
 
 ```
-seconds = ${pnumber}\s*s
+seconds = (${positive_number})\s*s
 ```
 
 ```
-milliseconds = ${pnumber}\s*ms
+milliseconds = (${positive_number})\s*ms
 ```
 
 ```
-microseconds = ${pnumber}\s*µs
+microseconds = (${positive_number})\s*µs
 ```
 
 ```
-nanoseconds = ${pnumber}\s*ns
+nanoseconds = (${positive_number})\s*ns
 ```
 
 ```
-pnumber = (?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?
+positive_number = (?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?
 ```
 
-This format is equivalent for numbers t
+
