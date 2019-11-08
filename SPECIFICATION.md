@@ -83,35 +83,35 @@ element = ${years}|${days}|${hours}|${minutes}|${seconds}|${milliseconds}|${micr
 ```
 
 ```
-years = (${positive_number})\s*y
+years = ${positive_number}\s*y
 ```
 
 ```
-days = (${positive_number})\s*d
+days = ${positive_number}\s*d
 ```
 
 ```
-hours = (${positive_number})\s*h
+hours = ${positive_number}\s*h
 ```
 
 ```
-minutes = (${positive_number})\s*m
+minutes = ${positive_number}\s*m
 ```
 
 ```
-seconds = (${positive_number})\s*s
+seconds = ${positive_number}\s*s
 ```
 
 ```
-milliseconds = (${positive_number})\s*ms
+milliseconds = ${positive_number}\s*ms
 ```
 
 ```
-microseconds = (${positive_number})\s*µs
+microseconds = ${positive_number}\s*µs
 ```
 
 ```
-nanoseconds = (${positive_number})\s*ns
+nanoseconds = ${positive_number}\s*ns
 ```
 
 ```
