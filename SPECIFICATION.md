@@ -72,7 +72,7 @@ This corresponds to `12.342024` seconds.
 
 ### Format
 
-This document will use the regular-expression common format used by many programming language. In case of misunderstanding use the JavaScript regular expression documentation as reference. The `${...}` operator is used when referring to another regular expression defined in the document.
+This document will use the regular-expression common format used by many programming language. In case of misunderstanding use the JavaScript regular expression documentation as reference. The `${}` operator is used when referring to another regular expression defined in the document.
 
 ```
 simple_duration = ${ws}*-?${ws}*${element}+${ws}*
@@ -115,9 +115,13 @@ nanoseconds = ${positive_number}${ws}*ns
 ```
 
 ```
-positive_number = (?:[1-9]\d*)(?:\.\d+)?
+positive_number = (?:0|[1-9]\d*)(?:\.\d+)?
 ```
 
 ```
 ws = the space character
 ```
+
+### Convertions to seconds
+
+Each `element` encountered is multiplied by its corresponding unit and added to a global number of seconds. After this operation the `-` operator should be applied if present.
