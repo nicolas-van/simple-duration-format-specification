@@ -8,7 +8,7 @@ This format aims to define a standardized way to represent an amount of time (wh
 
 It is not competing with the [ISO 8601 Duration format](https://en.wikipedia.org/wiki/ISO_8601) as that specification allows to represent context-dependant durations, like civil years or months. The Simple Duration Format only uses the SI second as base unit.
 
-There has already been a number of software implementations allowing similar conversion. But most of them do not rely on a strict specification explaining how the format works. This specification aims to correct this aspect.
+There has already been a number of software implementations allowing similar conversion. But most of them do not rely on a strict specification explaining how the format works, making it impossible to have a proper cross-language support. This specification aims to correct that aspect.
 
 ### Examples
 
