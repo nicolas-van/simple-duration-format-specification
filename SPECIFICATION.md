@@ -38,7 +38,8 @@ This corresponds to `12.342024` seconds.
 
 ### Definitions
 
-* **second**: A second according to the [SI](https://en.wikipedia.org/wiki/International_System_of_Units). *Representation symbol*: `s`.
+* **second**: A second according to the [SI](https://en.wikipedia.org/wiki/International_System_of_Units).
+  *Representation symbol*: `s`.
 * **millisecond**: 10e-3 seconds. *Representation symbol*: `ms`.
 * **microsecond**: 10e-6 seconds. *Representation symbol*: `µs`.
 * **nanosecond**: 10e-9 seconds. *Representation symbol*: `ns`.
