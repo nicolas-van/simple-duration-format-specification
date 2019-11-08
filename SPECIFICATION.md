@@ -29,10 +29,10 @@ This corresponds to `312` seconds.
 This corresponds to `35468712` seconds.
 
 ```
-12s 342ms 24µs
+-12s 342ms 24µs
 ```
 
-This corresponds to `12.342024` seconds.
+This corresponds to `-12.342024` seconds.
 
 ## Specification
 
@@ -130,4 +130,4 @@ Each `element` encountered is multiplied by its corresponding unit and added to 
 
 It should be noted that this format allows expressions like `345h` (specifying more hours that a day can contain), `0.1m` (a fraction of a unit that could be expressed with smaller units), `24m 3m` (specifying the same unit multiple times) or `3h 2y 3ms 4d` (using illogical ordering). This is a desirable particularity for easy human writing and ease of software implementation.
 
-When formatting an amount of time to the Simple Duration Format, a software should use a normalization process 
+When formatting an amount of time to the Simple Duration Format, a software **must** use a normalization process to write the output.
