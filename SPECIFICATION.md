@@ -1,4 +1,4 @@
-# Simple Duration Format Specification Draft
+# Simple Duration Format Specification 1.0
 
 ## Introduction
 
