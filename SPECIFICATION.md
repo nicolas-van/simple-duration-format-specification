@@ -79,39 +79,11 @@ simple_duration = ${ws}*-?${ws}*${element}+${ws}*
 ```
 
 ```
-element = ${years}|${days}|${hours}|${minutes}|${seconds}|${milliseconds}|${microseconds}|${nanoseconds}
+element = ${positive_number}${ws}${unit}
 ```
 
 ```
-years = ${positive_number}${ws}*y
-```
-
-```
-days = ${positive_number}${ws}*d
-```
-
-```
-hours = ${positive_number}${ws}*h
-```
-
-```
-minutes = ${positive_number}${ws}*m
-```
-
-```
-seconds = ${positive_number}${ws}*s
-```
-
-```
-milliseconds = ${positive_number}${ws}*ms
-```
-
-```
-microseconds = ${positive_number}${ws}*µs
-```
-
-```
-nanoseconds = ${positive_number}${ws}*ns
+unit = y|d|h|m|s|ms|µs|ns
 ```
 
 ```
