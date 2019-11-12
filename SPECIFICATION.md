@@ -104,9 +104,9 @@ It should be noted that this format allows expressions like `345h` (specifying m
 
 When formatting an amount of time to the Simple Duration Format, a software **must** use a normalization process to write the output. The normalization process is as follow:
 
-First write the `-` sign if necessary and consider the absolute value of the amount to convert for the rest of the writing process. Take the most significant unit (the year) and detect if that amount is greater that 0. If that's the case write it to the output. Remove the corresponding amount of seconds and repeat for all following units from the most significant to the least significant (the nanosecond). Write a space character between all units. If at the end no element was written at all write `0s`.
+First write the `-` sign if necessary and consider the absolute value of the amount to convert for the rest of the writing process. Take the most significant unit (the year) and detect if that amount is greater that 0. If that's the case write it to the output. Remove the corresponding amount of seconds and repeat for all following units from the most significant to the least significant (the nanosecond). Write a space character between all units. If at the end no element was written at all write `0` plus the appropriate unit according to the rounding.
 
-Example of normalization:
+Examples of normalization:
 
 * `345h` -> `14d 9h`
 * `0.1m` -> `6s`
