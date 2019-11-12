@@ -75,7 +75,7 @@ This corresponds to `-12.342024` seconds.
 This document will use the regular-expression common format used by many programming language. In case of misunderstanding use the JavaScript regular expression documentation as reference. The `${}` operator is used when referring to another regular expression defined in the document.
 
 ```
-simple_duration = ${ws}*-?${ws}*${element}+${ws}*
+simple_duration = ${ws}*-?(?:${ws}*${element}${ws}*)+
 ```
 
 ```
